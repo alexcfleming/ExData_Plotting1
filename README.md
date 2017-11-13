@@ -1,4 +1,13 @@
-## Introduction
+## Alex Fleming Assignment Notes
+
+There are separate R files that indepedently gather the data and produce plots 1-4 as png files. The repository contains the objects after a completed run of all four functions, but with the .txt data file deleted to save memory in the Github repository.
+
+Note on character to numeric portions of functions:
+The use of the data.table 'fread' function in this case results in the '?' values in data causing a coercion back to characters, which I had to switch column by column back to numeric. I could have gone back to read.table with column classification, but wanted to use the data.table functionality. I am sure there is a more efficient or elegant way to do this - please send me ideas or examples.
+
+alex.c.fleming@gmail.com
+
+## Introduction - Assignment Notes
 
 This assignment uses data from
 the <a href="http://archive.ics.uci.edu/ml/">UC Irvine Machine
@@ -6,7 +15,6 @@ Learning Repository</a>, a popular repository for machine learning
 datasets. In particular, we will be using the "Individual household
 electric power consumption Data Set" which I have made available on
 the course web site:
-
 
 * <b>Dataset</b>: <a href="https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip">Electric power consumption</a> [20Mb]
 
@@ -35,10 +43,6 @@ web site</a>:
 
 ## Loading the data
 
-
-
-
-
 When loading the dataset into R, please consider the following:
 
 * The dataset has 2,075,259 rows and 9 columns. First
@@ -56,7 +60,6 @@ Date/Time classes in R using the `strptime()` and `as.Date()`
 functions.
 
 * Note that in this dataset missing values are coded as `?`.
-
 
 ## Making Plots
 
